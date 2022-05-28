@@ -3,13 +3,18 @@ class DataTypeMismatchError(Exception):
 
 
 class XXX:
-"""
-
-:return
-
-"""
+    """
+    This class is just to make it easier for the user
+    """
     @staticmethod
     def compare(arg, control_data):
+        """
+        :param arg: Data argument to be checked against the control data
+        :type arg: Any
+        :param control_data: Data to be checked against
+        :type control_data: Any
+        :return tuple(list, list)
+        """
         try:
             datacheck = _DataCheck.setup(arg, control_data)
             res = datacheck.check_instances()
