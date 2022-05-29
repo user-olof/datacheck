@@ -2,6 +2,7 @@ import pytest
 
 from datacheck import XXX
 
+# sys.path.extend('C:\\Users\\Olof\\PycharmProjects\\DataCheck')
 
 @pytest.fixture
 def control_data_list():
